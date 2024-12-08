@@ -1,0 +1,32 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 13em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btnContainer{
+    text-align: center;
+}
+
+.buttons{
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(207, 161, 63);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.35s;
+}
+
+.buttons:hover{
+    background-color: rgb(146, 113, 42);
+    transform: scale(1.1);
+}
