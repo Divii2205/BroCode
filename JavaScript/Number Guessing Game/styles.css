@@ -1,0 +1,87 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: gainsboro;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 2em;
+}
+
+.container{
+    text-align: center;
+    background-color: rgb(255, 252, 248);
+    border-radius: 0.5em;
+    padding: 1em 3em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.heading h4{
+    color: rgb(134, 132, 132);
+}
+
+#input {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    outline: none;
+    font-size: larger;
+    text-align: center;
+}
+
+#input:focus {
+    border: 2px solid rgb(47, 142, 161);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.03);
+}
+
+button{
+    width: 170px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    font-size: larger;
+    outline: none;
+    border: 2px solid lightgray;
+    background-color: rgb(140, 216, 231);
+}
+
+button:hover{
+    border: 2px solid rgb(47, 142, 161);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.invalid{
+    background-color: rgb(240, 105, 103);
+}
+
+.correct{
+    background-image: url('Confetti.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.correct-message{
+    background-color: rgb(140, 248, 161);
+}
+
+.too-low{
+    background-color: rgb(225, 182, 252);
+}
+
+.too-high{
+    background-color: rgb(231, 192, 140);
+}
+
+.message{
+    border-radius: 5px;
+    padding: 10px;
+}
