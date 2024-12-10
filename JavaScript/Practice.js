@@ -111,3 +111,17 @@
 // } while (username === "" || username === null) 
 // console.log(`Hello ${username}`);
 
+// -------Spread operator-------
+// 1. operator = ...
+// 2. allows an iterable such as an array or string to be expanded into seperate elements (unpacks elements)
+
+// Example:
+// let array = [1, 2, 3, 4, 5, 6];
+// let maxNum = Math.max(array) --> throws an error
+// let maxNum = Math.max(...array);
+
+// -------Rest parameter-------
+// spread = expands an array into seperate elements 
+// rest = bundles seperate elements into an array
+
+// (...rest) allows a function to work with variable number of arguments by binding them into an array
