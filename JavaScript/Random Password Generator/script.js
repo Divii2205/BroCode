@@ -22,17 +22,18 @@ function generatePassword(length, includeLowerCase, includeUpperCase, includeNum
     return password;;
 }
 
-const passwordLength = 12;
-const includeLowerCase = true;
-const includeUpperCase = true;
-const includeNumbers = true;
-const includeSymbols = true;
-
 const btn = document.querySelector("#generateBtn");
 const passwordText = document.querySelector("#passGen");
 
-btn.addEventListener('click', function(){
+btn.addEventListener('click', function(e){
+    e.preventDefault();
+    
+    const includeLowerCase = document.querySelector("#lowerCase").checked;
+    const includeUpperCase = document.querySelector("#upperCase").checked;
+    const includeNumbers = document.querySelector("#numbers").checked;
+    const includeSymbols = document.querySelector("#symbols").checked;
+    const passwordLength = Number(document.querySelector("#length").value);
+    
     const password = generatePassword(passwordLength, includeLowerCase, includeUpperCase, includeNumbers, includeSymbols);
     passwordText.textContent = `${password}`;
-
 })

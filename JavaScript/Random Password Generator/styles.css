@@ -9,6 +9,9 @@ body{
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     background-color: rgb(255, 252, 248);
     border-radius: 0.5em;
@@ -18,20 +21,21 @@ body{
 
 
 button{
-    width: 170px;
+    width: 200px;
     height: 50px;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
     transition: all 0.2s ease;
     font-size: larger;
     outline: none;
     border: 2px solid lightgray;
-    background-color: rgb(140, 216, 231);
+    background-color: rgb(128, 14, 160);
+    color: aliceblue;
 }
 
 button:hover{
-    border: 2px solid rgb(47, 142, 161);
+    border: 2px solid rgb(101, 7, 128);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transform: scale(1.03);
     cursor: pointer;
@@ -43,4 +47,39 @@ p{
     border-radius: 10px;
     font-weight: bold;
     padding: 15px;
+    transition: all 0.25s ease;
+}
+
+p:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.03);
+}
+
+#length{
+    margin: 15px;
+    text-align: center;
+    background-color: rgb(255, 252, 248);
+    border-radius: 0.5em;
+    font-size: 1.5em;
+    width: fit-content;
+    outline: none;
+    border: 2px solid rgb(110, 110, 110);
+    transition: all 0.25s ease;
+}
+
+#length:focus{
+    border: 2px solid rgb(101, 7, 128);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transform: scale(1.03);
+}
+
+#options{
+    text-align: left;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: rgb(101, 7, 128);
 }

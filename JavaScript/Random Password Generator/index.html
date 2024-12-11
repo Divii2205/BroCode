@@ -9,7 +9,25 @@
 <body>
     <div class="container">
         <h2>Random Password Generator</h2>
-        <p id="passGen"></p>
+        <p id="passGen">Your Password will appear here</p>
+
+        <label for="passwordLength" id="lengthLabel">Password length: </label>
+        <input type="number" id="length" name="passwordLength" value="1" min="1"><br>
+
+        <div id="options">
+            <input type="checkbox" id="lowerCase" name="filter">
+            <label for="lowerCase" id="filterText">Include Lower Case</label><br>
+            
+            <input type="checkbox" id="upperCase" name="filter">
+            <label for="upperCase" id="filterText">Include Upper Case</label><br>
+            
+            <input type="checkbox" id="numbers" name="filter">
+            <label for="numbers" id="filterText">Include Numbers</label><br>
+            
+            <input type="checkbox" id="symbols" name="filter">
+            <label for="symbols" id="filterText">Include Symbols</label><br>
+        </div>
+
         <button id="generateBtn">Generate</button>
     </div>
 
